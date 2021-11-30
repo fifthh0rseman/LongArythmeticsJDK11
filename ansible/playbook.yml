@@ -17,7 +17,7 @@
     - name: Copy Jar to server
       copy:
         src: ../target/LongArythmeticsJDK11-1.0-SNAPSHOT.jar
-        dest: SmartHome.jar
+        dest: LongArythm.jar
         remote_src: no
 
     - name: Запуск JAR
