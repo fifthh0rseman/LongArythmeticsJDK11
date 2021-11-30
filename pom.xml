@@ -15,7 +15,7 @@
                     <configuration>
                         <archive>
                             <manifest>
-                                <mainClass>gui.MainFrame</mainClass>
+                                <mainClass>src.main.java.PracticalMain</mainClass>
                             </manifest>
                         </archive>
                         <descriptorRefs>
