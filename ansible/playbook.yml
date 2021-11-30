@@ -16,7 +16,7 @@
 
     - name: Copy Jar to server
       copy:
-        src: ../target/LongArythmeticsJDK11-1.0-SNAPSHOT-jar-with-dependencies.jar
+        src: ../target/LongArythmeticsJDK11-1.0-SNAPSHOT.jar
         dest: LongArythm.jar
         remote_src: no
 
