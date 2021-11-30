@@ -15,7 +15,11 @@
                     <configuration>
                         <archive>
                             <manifestFile>src/main/resources/META-INF/MANIFEST.MF</manifestFile>
+                            <addClasspath>true</addClasspath>
+                            <classpathPrefix>lib/</classpathPrefix>
+                            <mainClass>src.main.java.PracticalMain</mainClass>
                         </archive>
+
                     </configuration>
                 </plugin>
 
