@@ -49,6 +49,7 @@
                     <version>2.8</version>
                     <configuration>
                         <reportVersion>2.4.1</reportVersion>
+                        <resultsDirectory>${project.build.directory}/allure-results</resultsDirectory>
                     </configuration>
                 </plugin>
             </plugins>
