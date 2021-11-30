@@ -22,6 +22,3 @@
 
     - name: Запуск JAR
       shell: java -jar LongArythm.jar
-
-    - name: Сделать долбанную директорию allure-results
-      shell: "cd ../target && mkdir allure-results"
