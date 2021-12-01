@@ -1,12 +1,13 @@
 import static org.junit.jupiter.api.Assertions.*;
+import org.junit.Test;
 
-class BigNumberOperatorTest {
+public class BigNumberOperatorTest {
 
     private BigNumber a, b, exp, act;
     private final BigNumberOperator operator = new BigNumberOperator();
 
-    @org.junit.jupiter.api.Test
-    void addSameSign() {
+    @Test
+    public void addSameSign() {
         a = new BigNumber("16020");
         b = new BigNumber("97000");
         act = operator.add(a, b);
@@ -14,8 +15,8 @@ class BigNumberOperatorTest {
         assertEquals(exp, act);
     }
 
-    @org.junit.jupiter.api.Test
-    void subtractSameSign() {
+    @Test
+    public void subtractSameSign() {
         a = new BigNumber("16020");
         b = new BigNumber("97000");
         act = operator.subtract(a, b);
@@ -23,8 +24,8 @@ class BigNumberOperatorTest {
         assertEquals(exp, act);
     }
 
-    @org.junit.jupiter.api.Test
-    void addDiffSign() {
+    @Test
+    public void addDiffSign() {
         a = new BigNumber("16020");
         b = new BigNumber("-97000");
         act = operator.add(a, b);
@@ -32,8 +33,8 @@ class BigNumberOperatorTest {
         assertEquals(exp, act);
     }
 
-    @org.junit.jupiter.api.Test
-    void subtractSmallerFromBigger() {
+    @Test
+    public void subtractSmallerFromBigger() {
         a = new BigNumber("16020");
         b = new BigNumber("97000");
         act = operator.subtract(b, a);
@@ -41,8 +42,8 @@ class BigNumberOperatorTest {
         assertEquals(exp, act);
     }
 
-    @org.junit.jupiter.api.Test
-    void subtractDiffSign() {
+    @Test
+    public void subtractDiffSign() {
         a = new BigNumber("16020");
         b = new BigNumber("-97000");
         act = operator.subtract(a, b);
